@@ -15,7 +15,7 @@ WORKDIR /react-app
 # Copies package-related files from the host to the container for dependency installation.
 COPY react-app/package*.json ./
 
-# Installs Node.js dependencies based on the copied package files.
+# Installs Node.js dependencies based on the copied package files. 
 RUN npm install
 
 # Copies all project files from the host into the container's working directory.
