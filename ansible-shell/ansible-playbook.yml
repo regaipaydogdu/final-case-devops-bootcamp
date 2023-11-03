@@ -1,0 +1,20 @@
+---
+- name: Disk Usage Monitoring
+  hosts: my_server
+  become: yes
+  become_user: root
+  vars:
+    script_source: /script/disk_usage_alert.sh
+    script_destination: /opt/disk_usage_alert/disk_usage_alert.sh
+  tasks:
+    - name: Copy script file to remote hosts
+      copy:
+        src: "{{ script_source }}"
+        dest: "{{ script_destination }}"
+        mode: a+x   # Provides executable permissions for the copied file
+
+    - name: Create a cron job to run the script every 3 minutes
+      cron:
+        name: "Disk Usage Monitor"
+        minute: "*/3"
+        job: "{{ script_destination }}"
