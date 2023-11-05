@@ -1,0 +1,28 @@
+stages:
+  - tests
+  - push-docker-hub
+
+Run some tests:
+  stage: tests
+  script:
+    - echo "Run some tests."
+  tags:
+    - react
+
+Build and Push Docker Image to DockerHub:
+  image: docker:latest
+  services:
+    - docker:dind
+  stage: push-docker-hub
+  tags:
+    - react
+  variables:
+    DOCKER_TLS_CERTDIR: ""
+  before_script:
+    - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+  script:
+    - docker build -t $DOCKER_IMAGE -f ./docker/Dockerfile .
+    - docker tag $DOCKER_IMAGE $DOCKER_USERNAME/$DOCKER_IMAGE
+    - docker push $DOCKER_USERNAME/$DOCKER_IMAGE
+  after_script:
+    - docker logout
