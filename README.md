@@ -15,11 +15,11 @@ This README file provides general information. Each project directory has its in
 1. [Tasks](#hash-tasks)
    - [Assignment](#ballot_box_with_check-assignment)
    - [Deploy Application to AWS](#ballot_box_with_check-deploy-application-to-aws)
-   - [Deploy Application to Kubernates](#asterisk-optional-tasks)
-   - [Bonus](#asterisk-optional-tasks)
-2. [GitLab CI/CD Configuration](#notebook_with_decorative_cover-overview-)
-3. [GitLab Pipeline](#loop-gitlab-pipeline-)
-4. [Directory Content](#open_file_folder-directory-content-)
+   - [Deploy Application to Kubernates](#ballot_box_with_check-deploy-application-to-kubernates)
+   - [Bonus](#ballot_box_with_check-bonus)
+2. [GitLab CI/CD Configuration](#wrench-gitlab-ci/cd-configuration)
+3. [GitLab Pipeline](#loop-gitlab-pipeline)
+4. [Directory Content](#open_file_folder-directory-content)
 
 ### :hash: **Tasks**
 
