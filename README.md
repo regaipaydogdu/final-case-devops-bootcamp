@@ -12,13 +12,13 @@ This README file provides general information. Each project directory has its in
 
 ### :open_book: **Table of Contents**
 
-1. [Tasks](#hash-tasks-)
-   - [Assignment](#ballot_box_with_check-essential-tasks)
-   - [Deploy Application to AWS](#asterisk-optional-tasks)
+1. [Tasks](#hash-tasks)
+   - [Assignment](#ballot_box_with_check-assignment)
+   - [Deploy Application to AWS](#ballot_box_with_check-deploy-application-to-aws)
    - [Deploy Application to Kubernates](#asterisk-optional-tasks)
    - [Bonus](#asterisk-optional-tasks)
 2. [GitLab CI/CD Configuration](#notebook_with_decorative_cover-overview-)
-3. [GitLab Pipeline](#sparkles-featured-)
+3. [GitLab Pipeline](#loop-gitlab-pipeline-)
 4. [Directory Content](#open_file_folder-directory-content-)
 
 ### :hash: **Tasks**
