@@ -85,12 +85,12 @@ The pipeline has 3 stages:
 
 ```
 /                 : This is the GitLab CI/CD parent pipeline manifest.
-ansible-shell/    : Inside this directory, a simple shell script for monitoring disk usage and sending email alerts.
+ansible-shell/    : Shell script for monitoring disk usage and sending email alerts.
 assets/           : The directory where the visual content is stored.
 docker/           : React.js application and Dockerfile are stored.
 gitlab-runner/    : The folder that hosts own GitLab runner's config.toml file.
 kubernates/       : Inside this directory, you can find Kubernetes deployment manifests.
-terraform/        : This directory houses a modular Terraform stack that features integration with various AWS services.
+terraform/        : Terraform stack that features integration with AWS services.
 ```
 
 
