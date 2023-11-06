@@ -81,17 +81,16 @@ The pipeline has 3 stages:
 
 
 
-### :open_file_folder: **Directory Content** [🔝][@jump-to-top]
+### :open_file_folder: **Contents of the Directory**
 
 ```
-/           : Gitlab CI/CD parent pipeline manifest.
-.github/    : Github Actions workflow manifests, issue and pull request templates.
-.gitlab/    : Terraform deployment manifest, self-hosted runner configuration.
-ansible/    : Simple shell script for checking the disk usage and sending email alerts.
-assets/     : AWS infrastucture diagram draw.io export.
-docker/     : React application, Dockerfiles for production and development environments.
-k8s/        : Kubernetes deployment manifests.
-terraform/  : Modular Terraform Stack featuring most AWS services.
+/                 : This is the GitLab CI/CD parent pipeline manifest.
+ansible-shell/    : Inside this directory, you'll find a simple shell script for monitoring disk usage and sending email alerts.
+assets/           : The directory where the visual content is stored.
+docker/           : React.js application and Dockerfile are stored.
+gitlab-runner/    : The folder that hosts own GitLab runner's config.toml file.
+kubernates/       : Inside this directory, you can find Kubernetes deployment manifests.
+terraform/        : This directory houses a modular Terraform stack that features integration with various AWS services.
 ```
 
 
