@@ -17,9 +17,9 @@ This README file provides general information. Each project directory has its in
    - [Deploy Application to AWS](#ballot_box_with_check-deploy-application-to-aws)
    - [Deploy Application to Kubernates](#ballot_box_with_check-deploy-application-to-kubernates)
    - [Bonus](#ballot_box_with_check-bonus)
-2. [GitLab CI/CD Configuration](#wrench-gitlab-ci/cd-configuration)
+2. [GitLab CI CD Configuration](#wrench-gitlab-ci-cd-configuration)
 3. [GitLab Pipeline](#loop-gitlab-pipeline)
-4. [Directory Content](#open_file_folder-directory-content)
+4. [Contents of the Directory](#open_file_folder-contents-of-the-directory)
 
 ### :hash: **Tasks**
 
@@ -50,7 +50,7 @@ This README file provides general information. Each project directory has its in
 > 4. Instead of using GitLab's shared runners, you can configure your own runner.
 
 
-### :wrench: GitLab CI/CD Configuration
+### :wrench: GitLab CI CD Configuration
 
 To run the projects correctly, we need to add variables to GitLab. Each project has its own set of variables.
 
