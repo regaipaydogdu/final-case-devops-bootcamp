@@ -12,7 +12,7 @@ This README file provides general information. Each project directory has its in
 
 ### :open_book: **Table of Contents**
 
-1. [Tasks](#hash-tasks-)
+1. [Tasks](#hash-Tasks-)
    - [Assignment](#ballot_box_with_check-essential-tasks)
    - [Deploy Application to AWS](#asterisk-optional-tasks)
    - [Deploy Application to Kubernates](#asterisk-optional-tasks)
