@@ -50,9 +50,41 @@ This README file provides general information. Each project directory has its in
 > 4. Instead of using GitLab's shared runners, you can configure your own runner.
 
 
-#### _Infrastructure Visualization_
+### :wrench: GitLab CI/CD Configuration
 
-![AWS Infrastructure Diagram][#drawio]
+To run the projects correctly, we need to add variables to GitLab. Each project has its own set of variables.
+
+> 1. Go to "Settings > CI/CD > Variables."
+> 2. Click "Add variable."
+
+
+![Gitlab CI/CD Variables][#gitlabci-variables]
+
+| Key | Value     | Description                |
+| :-------- | :------- | :------------------------- |
+| `DOCKER_IMAGE` | `Docker Image Name` | **e.g.** my-react-app |
+| `DOCKER_PASSWORD` | `Docker Hub Password` | ******************** |
+| `DOCKER_USERNAME` | `Docker Hub Username` | **e.g.** regaipaydogdu |
+
+
+### :loop: GitLab Pipeline
+
+The pipeline has 3 stages:
+
+> 1. "build" stage  : In this stage, the application is built, and relevant artifacts are generated as part of the build process.
+> 2. "test" stage   : It runs some tests (it simply writes some output to the standard output).
+> 3. "deploy" stage : First, it runs the "docker login" command. Then, it builds the image and pushes it to Docker Hub.
+
+
+![Gitlab CI/CD Variables][#gitlabci-pipeline]
+
+| Key | Value     | Description                |
+| :-------- | :------- | :------------------------- |
+| `DOCKER_IMAGE` | `Docker Image Name` | **e.g.** my-react-app |
+| `DOCKER_PASSWORD` | `Docker Hub Password` | ******************** |
+| `DOCKER_USERNAME` | `Docker Hub Username` | **e.g.** regaipaydogdu |
+
+
 
 ### :open_file_folder: **Directory Content** [🔝][@jump-to-top]
 
