@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: react-app
-        image: regaipaydogdu/react-app
+        image: regaipaydogdu/my-react-app
         resources:
           requests:
               memory: "128Mi"
