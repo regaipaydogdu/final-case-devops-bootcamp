@@ -12,7 +12,7 @@ In this project, we implement GitLab CI/CD for our pipeline. Instead of relying 
 ![Gitlab CI/CD Runner AWS][#gitlab-runner-aws]
 <br>
 <br>
-<p align="center"><img src="https://github.com/regaipaydogdu/final-case-devops-bootcamp/blob/main/assets/images/gitlab-runners.PNG" alt="Gitlab Runner"></a></p>
+<p><img src="https://github.com/regaipaydogdu/final-case-devops-bootcamp/blob/main/assets/images/gitlab-runners.PNG" alt="Gitlab Runner"></a></p>
 
 
 
