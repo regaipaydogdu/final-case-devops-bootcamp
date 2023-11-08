@@ -16,6 +16,14 @@ resource "aws_subnet" "private" {
 	tags = var.tags
 }
 
+resource "aws_subnet" "private2" {
+	vpc_id = aws_vpc.main.id
+	cidr_block = var.private_subnets2
+	availability_zone = data.aws_availability_zones.available.names[1]
+	tags = var.tags
+}
+
+
 
 resource "aws_route_table" "private" {
 	vpc_id = aws_vpc.main.id
@@ -28,5 +36,10 @@ resource "aws_route_table" "private" {
 
 resource "aws_route_table_association" "private" {
 	subnet_id = aws_subnet.private.id
+	route_table_id = aws_route_table.private.id
+}
+
+resource "aws_route_table_association" "private2" {
+	subnet_id = aws_subnet.private2.id
 	route_table_id = aws_route_table.private.id
 }
