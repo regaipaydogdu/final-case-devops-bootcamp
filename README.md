@@ -19,7 +19,8 @@ This README file provides general information. Each project directory has its in
    - [Bonus](#ballot_box_with_check-bonus)
 2. [GitLab CI CD Configuration](#wrench-gitlab-ci-cd-configuration)
 3. [GitLab Pipeline](#loop-gitlab-pipeline)
-4. [Contents of the Directory](#open_file_folder-contents-of-the-directory)
+4. [AWS Architecture Diagram](#black_nib-aws-architecture-diagram)
+5. [Contents of the Directory](#open_file_folder-contents-of-the-directory)
 
 ### :hash: **Tasks**
 
@@ -79,6 +80,14 @@ The pipeline has 3 stages:
 ![Gitlab CI/CD Pıpeline][#gitlabci-pipeline]
 
 
+
+### :black_nib: AWS Architecture Diagram
+
+
+
+![AWS Diagram/][#aws-diagram]
+
+
 ### :open_file_folder: **Contents of the Directory**
 
 ```
@@ -98,10 +107,9 @@ terraform/        : Terraform stack that features integration with AWS services.
 
 
 
-![Gitlab CI/][#aws-diagram]
 
 
-![Gitlab CD Variables][#aws-diagram1]
+
 
 
 
@@ -116,9 +124,7 @@ terraform/        : Terraform stack that features integration with AWS services.
 [#gitlabci-pipeline]: ./assets/images/gitlabci-pipeline.PNG
 [#gitlabci-pipeline-status]: ./assets/images/gitlabci-pipeline-status.PNG
 [#gitlabci-variables]: ./assets/images/gitlabci-variables.png
-
-[#aws-diagram]: ./assets/aws_architecture_diagram_light.svg
-[#aws-diagram1]: ./assets/aws_architecture_diagram_dark.svg
+[#aws-diagram]: ./assets/aws_architecture_diagram_dark.svg
 
 [#gitlab]: https://img.shields.io/badge/GitLab%20CI/CD-330F63?style=flat&logo=gitlab&logoColor=white
 [#react]: https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB
