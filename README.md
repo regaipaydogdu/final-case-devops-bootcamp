@@ -12,38 +12,38 @@ This README file provides general information. Each project directory has its in
 
 ### :open_book: **Table of Contents**
 
-1. [Tasks](#hash-tasks)
-   - [Assignment](#ballot_box_with_check-assignment)
-   - [Deploy Application to AWS](#ballot_box_with_check-deploy-application-to-aws)
-   - [Deploy Application to Kubernates](#ballot_box_with_check-deploy-application-to-kubernates)
-   - [Bonus](#ballot_box_with_check-bonus)
+1. [Tasks](#tasks)
+   - [Assignment](#assignment)
+   - [Deploy Application to AWS](#deploy-application-to-aws)
+   - [Deploy Application to Kubernates](#deploy-application-to-kubernates)
+   - [Bonus](#bonus)
 2. [GitLab CI CD Configuration](#wrench-gitlab-ci-cd-configuration)
 3. [GitLab Pipeline](#loop-gitlab-pipeline)
 4. [AWS Architecture Diagram](#black_nib-aws-architecture-diagram)
 5. [Contents of the Directory](#open_file_folder-contents-of-the-directory)
 
-### :hash: **Tasks**
+###  **Tasks**
 
 > Fully cover the DevOps cycle and create a full-on CI/CD and cloud infrastructure.
 
-#### :ballot_box_with_check: **Assignment**
+####  **Assignment**
 
 > 1. Create a basic React.js application
 > 2. Create a Dockerfile for application.Try to form an image with the smallest possible size.
 > 3. Design and write a GitLab CI/CD pipeline featuring Dockerfile for application.
 
-#### :ballot_box_with_check: **Deploy Application to AWS**
+#### **Deploy Application to AWS**
 
 > 1. Use Terraform to provision the infrastructure.
 > 2. Application should be running on ECS Fargate.
 > 3. Make sure to use the ideal VPC and security group settings.
 > 4. Application load balancer must be configured in front of the service.
 
-#### :ballot_box_with_check: **Deploy Application to Kubernates**
+#### **Deploy Application to Kubernates**
 
 > 1. Write the required core manifest files
 
-#### :ballot_box_with_check: **Bonus**
+#### **Bonus**
 
 > 1. Configure auto-scaling onto your Fargate instance. Scale-up when CPU is above %50 and scale-down when CPU is below %20.
 > 2. Create the proper Cloudwatch dashboards and metrics for monitoring the performance of the application.
@@ -83,6 +83,7 @@ The pipeline has 3 stages:
 
 ### :black_nib: AWS Architecture Diagram
 
+This AWS architectural design represents a VPC with two Availability Zones. There is one public and one private subnet for each Availability Zone. Public subnets have direct internet access and can exit to the internet through an Internet Gateway. On the other hand, private subnets cannot access the internet directly but can securely access it through NAT Gateways. This structure is designed to adhere to high-security standards and provide a scalable infrastructure.
 
 
 ![AWS Diagram/][#aws-diagram]
@@ -99,23 +100,6 @@ gitlab-runner/    : The folder that hosts own GitLab runner's config.toml file.
 kubernates/       : Inside this directory, you can find Kubernetes deployment manifests.
 terraform/        : Terraform stack that features integration with AWS services.
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
