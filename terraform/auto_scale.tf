@@ -1,3 +1,6 @@
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/autoscaling_policy
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/appautoscaling_target
+
 resource "aws_appautoscaling_target" "ecs_target" {
   max_capacity       = 4
   min_capacity       = 1

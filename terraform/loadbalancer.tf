@@ -1,3 +1,7 @@
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener
+
 resource "aws_lb" "main" {
   name                       = var.loadbalancer_name
   internal                   = false

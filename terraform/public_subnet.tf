@@ -1,3 +1,7 @@
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/subnet
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table_association.html
+
 resource "aws_subnet" "public" {
 	vpc_id = aws_vpc.main.id
 	cidr_block = var.public_subnets

@@ -1,3 +1,5 @@
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group
+
 resource "aws_security_group" "ecs_security_group" {
   name   = "ECS-SecurityGroup"
   vpc_id = aws_vpc.main.id

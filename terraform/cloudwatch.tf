@@ -1,3 +1,5 @@
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm
+
 resource "aws_cloudwatch_metric_alarm" "cpu_scale_up" {
   alarm_name          = "CPUHighScaleUpAlarm"
   comparison_operator = "GreaterThanOrEqualToThreshold"
