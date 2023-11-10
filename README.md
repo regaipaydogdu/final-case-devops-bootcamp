@@ -100,6 +100,10 @@ terraform/        : Terraform stack that features integration with AWS services.
 
 
 
+![Gitlab CI/CD Variables][#aws-diagram]
+
+
+![Gitlab CI/CD Variables][#aws-diagram1]
 
 
 
@@ -111,11 +115,12 @@ terraform/        : Terraform stack that features integration with AWS services.
 
 
 
-
-
-[#gitlabci-pipeline]: ./assets/images/gitlabci-pipeline.PNG
-[#gitlabci-pipeline-status]: ./assets/images/gitlabci-pipeline-status.PNG
+[#gitlabci-pipeline]: ./assets/gitlabci-pipeline.PNG
+[#gitlabci-pipeline-status]: ./assets/gitlabci-pipeline-status.PNG
 [#gitlabci-variables]: ./assets/images/gitlabci-variables.png
+
+[#aws-diagram]: ./assets/images/aws_architecture_diagram_light
+[#aws-diagram1]: ./assets/images/aws_architecture_diagram_dark
 
 [#gitlab]: https://img.shields.io/badge/GitLab%20CI/CD-330F63?style=flat&logo=gitlab&logoColor=white
 [#react]: https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB
