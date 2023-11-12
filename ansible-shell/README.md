@@ -9,7 +9,7 @@
 
 | Files | Description|
 | :-------- |:------------------------- |
-| `ansible_playbook.yml` |A YAML file defining Ansible tasks to be executed if disk usage exceeds 90%.|
+| `ansible_playbook.yaml` |A YAML file defining Ansible tasks to be executed if disk usage exceeds 90%.|
 | `disk_usage_alert.sh` | A Shell script for monitoring disk usage on Linux systems and sending an email notification if it surpasses 90%.|
 
  Go to the directory with the files and run the following code
