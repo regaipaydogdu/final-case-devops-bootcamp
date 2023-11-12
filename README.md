@@ -8,7 +8,7 @@ This README file provides general information. Each project directory has its in
 
 **_Built with;_**
 
-[![aws][#aws]][@aws] [![docker][#docker]][@docker] ![gitlab][#gitlab] [![kubernetes][#kubernetes]][@kubernetes] [![react][#react]][@react]  [![terraform][#terraform]][@terraform] 
+[![aws][#aws]][@aws] [![docker][#docker]][@docker] [![gitlab][#gitlab]][@gitlab] [![kubernetes][#kubernetes]][@kubernetes] [![react][#react]][@react]  [![terraform][#terraform]][@terraform] 
 
 ### :open_book: **Table of Contents**
 
@@ -20,7 +20,8 @@ This README file provides general information. Each project directory has its in
 2. [GitLab CI CD Configuration](#wrench-gitlab-ci-cd-configuration)
 3. [GitLab Pipeline](#loop-gitlab-pipeline)
 4. [AWS Architecture Diagram](#black_nib-aws-architecture-diagram)
-5. [Contents of the Directory](#open_file_folder-contents-of-the-directory)
+5. [Videos (Run Project with Gitlab)](#movie_camera-videos)
+6. [Contents of the Directory](#open_file_folder-contents-of-the-directory)
 
 ###  **Tasks**
 
@@ -63,9 +64,12 @@ To run the projects correctly, we need to add variables to GitLab. Each project 
 
 | Key | Value     | Description                |
 | :-------- | :------- | :------------------------- |
+| `AWS_ACCESS_KEY_ID` | `AWS Access Key` | ******************** |
+| `AWS_SECRET_ACCESS_KEY` | `AWS Secret Key` | ******************** |
 | `DOCKER_IMAGE` | `Docker Image Name` | **e.g.** my-react-app |
 | `DOCKER_PASSWORD` | `Docker Hub Password` | ******************** |
 | `DOCKER_USERNAME` | `Docker Hub Username` | **e.g.** regaipaydogdu |
+
 
 
 ### :loop: GitLab Pipeline
@@ -73,8 +77,8 @@ To run the projects correctly, we need to add variables to GitLab. Each project 
 The pipeline has 3 stages:
 
 > 1. "build" stage  : In this stage, the application is built, and relevant artifacts are generated as part of the build process.
-> 2. "test" stage   : It runs some tests (it simply writes some output to the standard output).
-> 3. "deploy" stage : First, it runs the "docker login" command. Then, it builds the image and pushes it to Docker Hub.
+> 2. "package" stage   : First, it runs the "docker login" command. Then, it builds the image and pushes it to Docker Hub.
+> 3. "deploy" stage : The project is deployed on AWS using Terraform, creating the infrastructure and deploying the application to the target environment.
 
 ![Gitlab CI/CD Pıpeline Status][#gitlabci-pipeline-status]
 ![Gitlab CI/CD Pıpeline][#gitlabci-pipeline]
@@ -87,6 +91,14 @@ This AWS architectural design represents a VPC with two Availability Zones. Ther
 
 
 ![AWS Diagram/][#aws-diagram]
+
+### :movie_camera: Videos
+
+> Watch the project video;
+
+[![youtube][#youtube]][@youtube] 
+
+
 
 
 ### :open_file_folder: **Contents of the Directory**
@@ -116,8 +128,11 @@ terraform/        : Terraform stack that features integration with AWS services.
 [#terraform]: https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white
 [#aws]: https://img.shields.io/badge/AWS-FF9900?style=flat&logo=amazonaws&logoColor=white
 [#kubernetes]: https://img.shields.io/badge/Kubernetes-326ce5.svg?&style=flat&logo=kubernetes&logoColor=white
+[#youtube]: https://img.shields.io/badge/Youtube-red?&style=flat&logo=youtube&logoColor=white
 
 
+[@gitlab]: https://gitlab.com/regaipaydogdu/final-case-devops-bootcamp
+[@youtube]: https://youtu.be/MrfZi04hrGI
 [@react]: https://reactjs.org/
 [@docker]: https://www.docker.com/
 [@terraform]: https://www.terraform.io/
