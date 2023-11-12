@@ -2,6 +2,8 @@
 
 ## Final Project
 
+The project is to fully cover the DevOps cycle and create a full-on CI/CD and cloud infrastructure.
+
 ### :notebook: Notes
 
 This README file provides general information. Each project directory has its individual README file.
@@ -116,7 +118,7 @@ terraform/        : Terraform stack that features integration with AWS services.
 
 
 
-
+[#react-app]: ./assets/images/react_app.gif
 [#gitlabci-pipeline]: ./assets/images/gitlabci-pipeline.PNG
 [#gitlabci-pipeline-status]: ./assets/images/gitlabci-pipeline-status.PNG
 [#gitlabci-variables]: ./assets/images/gitlabci-variables.png
