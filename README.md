@@ -52,6 +52,7 @@ This README file provides general information. Each project directory has its in
 > 2. Create the proper Cloudwatch dashboards and metrics for monitoring the performance of the application.
 > 3. Draw your AWS architecture, explain the connections and relations between your configured services.
 > 4. Instead of using GitLab's shared runners, you can configure your own runner.
+> 5. Script (Ansible & Shell) that sends a notification by E-mail if the disk usage exceeds 90% in an operating system using any Linux distribution.
 
 
 ### :wrench: GitLab CI CD Configuration
