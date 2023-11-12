@@ -1,5 +1,5 @@
-aws_access_key = "AKIARJHXNHHPVCD7Y5G7"
-aws_secret_key = "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"
+aws_access_key = ""
+aws_secret_key = ""
 aws_region =  "eu-central-1"
 tag_name = "MyReactApp"
 external_port = "80"
