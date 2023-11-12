@@ -1,6 +1,4 @@
-
-# Source the configuration file for email settings
-source ./disk_alert.conf
+RECIPIENT_EMAIL=rgpaydogdu@gmail.com
 
 # Find partitions with a total usage rate exceeding 90%
 df -H | awk 'NR>1 && $5+0 >= 90 {print $5,$1}' | while read -r usage partition

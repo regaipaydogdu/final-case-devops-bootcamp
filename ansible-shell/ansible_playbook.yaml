@@ -1,10 +1,10 @@
 ---
 - name: Disk Usage Monitoring
-  hosts: my_server
+  hosts: localhost
   become: yes
   become_user: root
   vars:
-    script_source: /script/disk_usage_alert.sh
+    script_source: ./disk_usage_alert.sh
     script_destination: /opt/disk_usage_alert/disk_usage_alert.sh
   tasks:
     - name: Copy script file to remote hosts
