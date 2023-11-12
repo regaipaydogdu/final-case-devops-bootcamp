@@ -79,7 +79,7 @@ To run the projects correctly, we need to add variables to GitLab. Each project 
 The pipeline has 3 stages:
 
 > 1. "build" stage  : In this stage, the application is built, and relevant artifacts are generated as part of the build process.
-> 2. "package" stage   : First, it runs the "docker login" command. Then, it builds the image and pushes it to Docker Hub.
+> 2. "package" stage   : First, it runs the "docker login" command. Then, it builds the image and pushes it to Docker Hub. (Docker image size: 18.2 MB)
 > 3. "deploy" stage : The project is deployed on AWS using Terraform, creating the infrastructure and deploying the application to the target environment.
 
 ![Gitlab CI/CD Pıpeline Status][#gitlabci-pipeline-status]
