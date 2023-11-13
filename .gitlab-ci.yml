@@ -63,5 +63,3 @@ Deploy Application to AWS wiith Terraform:
     - terraform validate
     - terraform plan -var-file=variables.tfvars
     - terraform apply -auto-approve -var-file=variables.tfvars
-    - sleep 130
-    - terraform destroy -auto-approve -var-file=variables.tfvars
